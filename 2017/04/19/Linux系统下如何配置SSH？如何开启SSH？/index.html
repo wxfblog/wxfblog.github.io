@@ -34,23 +34,23 @@
 <link rel="canonical" href="http://yoursite.com/2017/04/19/Linux系统下如何配置SSH？如何开启SSH？/"/>
 
 
-<meta name="description" content="查看/安装SSH服务">
+<meta name="description" content="查看/安装SSH服务  登陆linux系统，打开终端命令。输入 rpm -qa |grep ssh如果没有安装SSH软件包，可以通过yum  或rpm安装包进行安装 启动SSH服务安装好了之后，就开启ssh服务。SSH服务一般叫做 SSHD命令行输入  service sshd start 可以启动或者使用 /etc/init.d/sshd start 配置\查看SSHD端口查看或编辑SSH服务">
 <meta name="keywords" content="Linux,SSH服务">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Linux系统下如何配置SSH？如何开启SSH？">
 <meta property="og:url" content="http://yoursite.com/2017/04/19/Linux系统下如何配置SSH？如何开启SSH？/index.html">
 <meta property="og:site_name" content="wxf·部落格">
-<meta property="og:description" content="查看/安装SSH服务">
+<meta property="og:description" content="查看/安装SSH服务  登陆linux系统，打开终端命令。输入 rpm -qa |grep ssh如果没有安装SSH软件包，可以通过yum  或rpm安装包进行安装 启动SSH服务安装好了之后，就开启ssh服务。SSH服务一般叫做 SSHD命令行输入  service sshd start 可以启动或者使用 /etc/init.d/sshd start 配置\查看SSHD端口查看或编辑SSH服务">
 <meta property="og:image" content="http://img.blog.csdn.net/20170330221607121?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvdTAxMzYzNTQ4Nw==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast">
 <meta property="og:image" content="http://img.blog.csdn.net/20170327120102419?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvdTAxMzYzNTQ4Nw==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast">
 <meta property="og:image" content="http://img.blog.csdn.net/20170327120156560?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvdTAxMzYzNTQ4Nw==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast">
 <meta property="og:image" content="http://img.blog.csdn.net/20170327120209044?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvdTAxMzYzNTQ4Nw==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast">
 <meta property="og:image" content="http://img.blog.csdn.net/20170327120226888?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvdTAxMzYzNTQ4Nw==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast">
 <meta property="og:image" content="http://img.blog.csdn.net/20170327120238326?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvdTAxMzYzNTQ4Nw==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast">
-<meta property="og:updated_time" content="2017-04-19T16:13:51.151Z">
+<meta property="og:updated_time" content="2017-04-19T16:16:17.828Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Linux系统下如何配置SSH？如何开启SSH？">
-<meta name="twitter:description" content="查看/安装SSH服务">
+<meta name="twitter:description" content="查看/安装SSH服务  登陆linux系统，打开终端命令。输入 rpm -qa |grep ssh如果没有安装SSH软件包，可以通过yum  或rpm安装包进行安装 启动SSH服务安装好了之后，就开启ssh服务。SSH服务一般叫做 SSHD命令行输入  service sshd start 可以启动或者使用 /etc/init.d/sshd start 配置\查看SSHD端口查看或编辑SSH服务">
 <meta name="twitter:image" content="http://img.blog.csdn.net/20170330221607121?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvdTAxMzYzNTQ4Nw==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast">
 
 
@@ -211,15 +211,17 @@
   <div class="post-toc" id="post-toc">
     <h2 class="post-toc-title">文章目录</h2>
     <div class="post-toc-content">
-      <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#"><span class="toc-text"></span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#启动SSH服务"><span class="toc-text">启动SSH服务</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#配置-查看SSHD端口"><span class="toc-text">配置\查看SSHD端口</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#远程连接SSH"><span class="toc-text">远程连接SSH</span></a></li></ol>
+      <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#启动SSH服务"><span class="toc-text">启动SSH服务</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#配置-查看SSHD端口"><span class="toc-text">配置\查看SSHD端口</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#远程连接SSH"><span class="toc-text">远程连接SSH</span></a></li></ol>
     </div>
   </div>
 
 
     <div class="post-content">
       
-        <p>查看/安装SSH服务</p>
-<h2 id=""><a href="#" class="headerlink" title=""></a><a id="more"></a></h2><p>登陆linux系统，打开终端命令。输入 rpm -qa |grep ssh<br><img src="http://img.blog.csdn.net/20170330221607121?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvdTAxMzYzNTQ4Nw==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt="这里写图片描述"><br>如果没有安装SSH软件包，可以通过yum  或rpm安装包进行安装<br><img src="http://img.blog.csdn.net/20170327120102419?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvdTAxMzYzNTQ4Nw==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt="这里写图片描述"></p>
+        <a id="more"></a>
+<p>查看/安装SSH服务</p>
+<hr>
+<p>登陆linux系统，打开终端命令。输入 rpm -qa |grep ssh<br><img src="http://img.blog.csdn.net/20170330221607121?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvdTAxMzYzNTQ4Nw==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt="这里写图片描述"><br>如果没有安装SSH软件包，可以通过yum  或rpm安装包进行安装<br><img src="http://img.blog.csdn.net/20170327120102419?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvdTAxMzYzNTQ4Nw==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt="这里写图片描述"></p>
 <h2 id="启动SSH服务"><a href="#启动SSH服务" class="headerlink" title="启动SSH服务"></a>启动SSH服务</h2><p>安装好了之后，就开启ssh服务。SSH服务一般叫做 SSHD<br>命令行输入  service sshd start 可以启动<br><img src="http://img.blog.csdn.net/20170327120156560?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvdTAxMzYzNTQ4Nw==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt="这里写图片描述"><br>或者使用 /etc/init.d/sshd start<br><img src="http://img.blog.csdn.net/20170327120209044?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvdTAxMzYzNTQ4Nw==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt="这里写图片描述"></p>
 <h2 id="配置-查看SSHD端口"><a href="#配置-查看SSHD端口" class="headerlink" title="配置\查看SSHD端口"></a>配置\查看SSHD端口</h2><p>查看或编辑SSH服务配置文件，如 vi /etc/ssh/sshd.config<br>如果要修改端口，把 port 后面默认的22端口改成别的端口即可<br><img src="http://img.blog.csdn.net/20170327120226888?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvdTAxMzYzNTQ4Nw==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt="这里写图片描述"></p>
 <h2 id="远程连接SSH"><a href="#远程连接SSH" class="headerlink" title="远程连接SSH"></a>远程连接SSH</h2><p>如果需要远程连接SSH，需要把22端口在防火墙上开放。<br>.关闭防火墙，或者设置22端口例外<br><img src="http://img.blog.csdn.net/20170327120238326?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvdTAxMzYzNTQ4Nw==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt="这里写图片描述"></p>
