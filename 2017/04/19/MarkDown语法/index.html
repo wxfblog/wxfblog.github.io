@@ -1,239 +1,185 @@
-<!DOCTYPE HTML>
-<html>
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
     
+<meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
 
-    <title>MarkDown语法 | Wxf~Blog</title>
-    <meta name="author" content="John Doe">
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+  <meta name="description" content="MarkDown语法"/>
+
+
+
+
+
+
+
+  <link rel="alternate" href="/default" title="wxf·部落格">
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=2.4.x" />
+
+
+
+<link rel="canonical" href="http://yoursite.com/2017/04/19/MarkDown语法/"/>
+
+
+<meta name="description" content="欢迎使用 Cmd Markdown 编辑阅读器 我们理解您需要更便捷更高效的工具记录思想，整理笔记、知识，并将其中承载的价值传播给他人，Cmd Markdown 是我们给出的答案 —— 我们为记录思想和分享知识提供更专业的工具。 您可以使用 Cmd Markdown：  整理知识，学习笔记  发布日记，杂文，所见所想撰写发布技术文稿（代码支持）撰写发布学术论文（LaTeX 公式支持）  除了您现在">
+<meta name="keywords">
+<meta property="og:type" content="article">
+<meta property="og:title" content="MarkDown语法">
+<meta property="og:url" content="http://yoursite.com/2017/04/19/MarkDown语法/index.html">
+<meta property="og:site_name" content="wxf·部落格">
+<meta property="og:description" content="欢迎使用 Cmd Markdown 编辑阅读器 我们理解您需要更便捷更高效的工具记录思想，整理笔记、知识，并将其中承载的价值传播给他人，Cmd Markdown 是我们给出的答案 —— 我们为记录思想和分享知识提供更专业的工具。 您可以使用 Cmd Markdown：  整理知识，学习笔记  发布日记，杂文，所见所想撰写发布技术文稿（代码支持）撰写发布学术论文（LaTeX 公式支持）  除了您现在">
+<meta property="og:image" content="https://www.zybuluo.com/static/img/logo.png">
+<meta property="og:image" content="https://www.zybuluo.com/static/img/toolbar-editor.png">
+<meta property="og:image" content="https://www.zybuluo.com/static/img/toolbar-manager.jpg">
+<meta property="og:image" content="https://www.zybuluo.com/static/img/toolbar-reader.jpg">
+<meta property="og:image" content="https://www.zybuluo.com/static/img/file-list.png">
+<meta property="og:updated_time" content="2017-04-19T13:27:50.520Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="MarkDown语法">
+<meta name="twitter:description" content="欢迎使用 Cmd Markdown 编辑阅读器 我们理解您需要更便捷更高效的工具记录思想，整理笔记、知识，并将其中承载的价值传播给他人，Cmd Markdown 是我们给出的答案 —— 我们为记录思想和分享知识提供更专业的工具。 您可以使用 Cmd Markdown：  整理知识，学习笔记  发布日记，杂文，所见所想撰写发布技术文稿（代码支持）撰写发布学术论文（LaTeX 公式支持）  除了您现在">
+<meta name="twitter:image" content="https://www.zybuluo.com/static/img/logo.png">
+
+
+<link rel="stylesheet" type="text/css" href="/css/style.css?v=2.4.x" />
+
+
+
+
+
+
+
+<script>
+  var CONFIG = {
+    search: false,
+    searchPath: "/search.xml",
+    fancybox: false,
+    toc: true,
+  }
+</script>
+
+
+
+
+  
+
+
+
+    <title> MarkDown语法 · wxf·部落格 </title>
+  </head>
+
+  <body><div id="mobile-navbar" class="mobile-navbar">
+  <div class="mobile-header-logo">
+    <a href="/." class="logo">wxf·部落格</a>
+  </div>
+  <div class="mobile-navbar-icon">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</div>
+
+<nav id="mobile-menu" class="mobile-menu slideout-menu">
+  <ul class="mobile-menu-list">
     
-    <meta name="description" content="博客">
-    
-    
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-
-    <meta property="og:title" content="MarkDown语法"/>
-    <meta property="og:site_name" content="wxf·部落格"/>
-
-    
-    <meta property="og:image" content="undefined"/>
-    
-
-    <link rel="icon" type="image/png" href="/favicon.png">
-    <link rel="alternate" href="/atom.xml" title="wxf·部落格" type="application/atom+xml">
-    <link rel="stylesheet" href="/css/lib/materialize.min.css">
-    <link rel="stylesheet" href="/css/lib/font-awesome.min.css">
-    <link rel="stylesheet" href="/css/style.css" media="screen" type="text/css">
-
-    
-        <link rel="stylesheet" href="/css/lib/prettify-tomorrow-night-eighties.css" type="text/css">
-    
-    <!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
-</head>
-
-
-<body>
-    <img src="/weixin_favicon.png" style="position: absolute; left: -9999px; opacity: 0; filter: alpha(opacity=0);">
-
-    <nav class="indigo">
-    <div class="nav-wrapper">
-        <a href="#" data-activates="main-menu" class="button-collapse">
-            <i class="fa fa-navicon"></i>
-        </a>
-        <div class="">
-            <a href="/" class="brand-logo hide-on-med-and-down">wxf·部落格</a>
-            <ul class="right hide-on-med-and-down">
-                
-                    <li>
-                        <a class="menu-home " href="/" >
-                            <i class="fa fa-home "></i>
-                            
-                            首页
-                        </a>
-                    </li>
-                
-                    <li>
-                        <a class="menu-archive " href="/archives" >
-                            <i class="fa fa-archive "></i>
-                            
-                            归档
-                        </a>
-                    </li>
-                
-                    <li>
-                        <a class="menu-category category-menu" href="javascript:;" data-activates="category-menu" >
-                            <i class="fa fa-bookmark "></i>
-                            
-                            分类
-                        </a>
-                    </li>
-                
-                    <li>
-                        <a class="menu-reading " href="/reading" >
-                            <i class="fa fa-book "></i>
-                            
-                            读书
-                        </a>
-                    </li>
-                
-                    <li>
-                        <a class="menu-about " href="/about" >
-                            <i class="fa fa-user "></i>
-                            
-                            关于
-                        </a>
-                    </li>
-                
-                    <li>
-                        <a class="menu-search modal-trigger " href="#search" >
-                            <i class="fa fa-search "></i>
-                            
-                            搜索
-                        </a>
-                    </li>
-                
-            </ul>
-            <div>
-    <ul class="side-nav indigo darken-1" id="main-menu">
-        
-        <li class="side-user">
-            <div class="row">
-                <div class="col s4 no-padding">
-                    <img class="avatar-image circle responsive-img" src="http://ww2.sinaimg.cn/small/74990035jw1f1rjkd681bj20rs0rsdhg.jpg" alt="User Avatar">
-                </div>
-                <div class="info col s8 valign-wrapper no-padding">
-                    <div class="valign">
-                        <p class="name">你的大名</p>
-                        <p class="desc">Web前端/iOS/技术宅</p>
-                    </div>
-                </div>
-            </div>
+      <a href="/">
+        <li class="mobile-menu-item">
+          
+          
+            Home
+          
         </li>
-        
-
-        
-            <li class="no-padding">
-                <a class="waves-effect menu-home " href="/" >
-                    <i class="fa fa-home "></i>
-                    
-                    首页
-                </a>
-            </li>
-        
-            <li class="no-padding">
-                <a class="waves-effect menu-archive " href="/archives" >
-                    <i class="fa fa-archive "></i>
-                    
-                    归档
-                </a>
-            </li>
-        
-            <li class="no-padding">
-                <a class="waves-effect menu-category category-menu" href="javascript:;" data-activates="category-menu" >
-                    <i class="fa fa-bookmark "></i>
-                    
-                    分类
-                </a>
-            </li>
-        
-            <li class="no-padding">
-                <a class="waves-effect menu-reading " href="/reading" >
-                    <i class="fa fa-book "></i>
-                    
-                    读书
-                </a>
-            </li>
-        
-            <li class="no-padding">
-                <a class="waves-effect menu-about " href="/about" >
-                    <i class="fa fa-user "></i>
-                    
-                    关于
-                </a>
-            </li>
-        
-            <li class="no-padding">
-                <a class="waves-effect menu-search modal-trigger " href="#search" >
-                    <i class="fa fa-search "></i>
-                    
-                    搜索
-                </a>
-            </li>
-        
-    </ul>
-
-    <ul class="side-nav indigo darken-1" id="category-menu">
+      </a>
     
-
-            
-
-    </ul>
-</div>
-
-        </div>
-    </div>
+      <a href="/archives/">
+        <li class="mobile-menu-item">
+          
+          
+            Archives
+          
+        </li>
+      </a>
+    
+  </ul>
 </nav>
 
-<div id="search" class="modal search-modal">
-    <div class="row">
-        <div class="input-field col s12">
-              <input id="search-input" type="text">
-              <label for="search-input">搜索</label>
-        </div>
-
-    </div>
-    <div id="search-result" class="search-result col s12">
-
-    </div>
+    <div class="container" id="mobile-panel">
+      <header id="header" class="header"><div class="logo-wrapper">
+  <a href="/." class="logo">wxf·部落格</a>
 </div>
 
-
-    <main>
-        <div class="container main-container">
-    <nav class="page-nav hide-on-small-only">
-    <div class="nav-wrapper indigo">
-        <span class="breadcrumb">当前位置（分类目录）</span>
-        
+<nav class="site-navbar">
+  
+    <ul id="menu" class="menu">
+      
+        <li class="menu-item">
+          <a class="menu-item-link" href="/">
             
-
-        
-
-        
-    </div>
+            
+              Home
+            
+          </a>
+        </li>
+      
+        <li class="menu-item">
+          <a class="menu-item-link" href="/archives/">
+            
+            
+              Archives
+            
+          </a>
+        </li>
+      
+      
+    </ul>
+  
 </nav>
 
-<article>
-    <div class="card">
-        <div class="card-content">
+      </header>
+
+      <main id="main" class="main">
+        <div class="content-wrapper">
+          <div id="content" class="content">
             
+  
+  <article class="post">
+    <header class="post-header">
+      <h1 class="post-title">
+        
+          MarkDown语法
+        
+      </h1>
 
-            <div class="article-title">
-                
+      <div class="post-meta">
+        <span class="post-time">
+          2017年4月19日
+        </span>
+      </div>
+    </header>
+
     
-        <h1>MarkDown语法</h1>
     
+  <div class="post-toc" id="post-toc">
+    <h2 class="post-toc-title">Contents</h2>
+    <div class="post-toc-content">
+      <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#欢迎使用-Cmd-Markdown-编辑阅读器"><span class="toc-text">欢迎使用 Cmd Markdown 编辑阅读器</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Windows-Mac-Linux-全平台客户端"><span class="toc-text">Windows/Mac/Linux 全平台客户端</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#什么是-Markdown"><span class="toc-text">什么是 Markdown</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-制作一份待办事宜-Todo-列表"><span class="toc-text">1. 制作一份待办事宜 Todo 列表</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-书写一个质能守恒公式-LaTeX"><span class="toc-text">2. 书写一个质能守恒公式[^LaTeX]</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-高亮一段代码-code"><span class="toc-text">3. 高亮一段代码[^code]</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-高效绘制-流程图"><span class="toc-text">4. 高效绘制 流程图</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#5-高效绘制-序列图"><span class="toc-text">5. 高效绘制 序列图</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#6-高效绘制-甘特图"><span class="toc-text">6. 高效绘制 甘特图</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#7-绘制表格"><span class="toc-text">7. 绘制表格</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#8-更详细语法说明"><span class="toc-text">8. 更详细语法说明</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#什么是-Cmd-Markdown"><span class="toc-text">什么是 Cmd Markdown</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-实时同步预览"><span class="toc-text">1. 实时同步预览</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-编辑工具栏"><span class="toc-text">2. 编辑工具栏</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-编辑模式"><span class="toc-text">3. 编辑模式</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-实时的云端文稿"><span class="toc-text">4. 实时的云端文稿</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#5-离线模式"><span class="toc-text">5. 离线模式</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#6-管理工具栏"><span class="toc-text">6. 管理工具栏</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#7-阅读工具栏"><span class="toc-text">7. 阅读工具栏</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#8-阅读模式"><span class="toc-text">8. 阅读模式</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#9-标签、分类和搜索"><span class="toc-text">9. 标签、分类和搜索</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#10-文稿发布和分享"><span class="toc-text">10. 文稿发布和分享</span></a></li></ol></li></ol></li></ol>
+    </div>
+  </div>
 
 
-            </div>
-            <time class="indigo-link-context" datetime="2017-04-19T09:22:56.000Z"><a href="/2017/04/19/MarkDown语法/">2017-04-19</a></time>
-
-            <span id="busuanzi_container_page_pv" class="read-times-container">
-    <i class="fa fa-eye"></i>
-    <span id="busuanzi_value_page_pv"></span>
-</span>
-
-            
-
-            <div class="toc indigo-link-context hide-on-med-and-down">
-    <ol class="section table-of-contents"><li class="section table-of-contents-item section table-of-contents-level-1"><a class="section table-of-contents-link" href="#欢迎使用-Cmd-Markdown-编辑阅读器"><span class="section table-of-contents-text">欢迎使用 Cmd Markdown 编辑阅读器</span></a><ol class="section table-of-contents-child"><li class="section table-of-contents-item section table-of-contents-level-3"><a class="section table-of-contents-link" href="#Windows-Mac-Linux-全平台客户端"><span class="section table-of-contents-text">Windows/Mac/Linux 全平台客户端</span></a></li></ol></li><li class="section table-of-contents-item section table-of-contents-level-2"><a class="section table-of-contents-link" href="#什么是-Markdown"><span class="section table-of-contents-text">什么是 Markdown</span></a><ol class="section table-of-contents-child"><li class="section table-of-contents-item section table-of-contents-level-3"><a class="section table-of-contents-link" href="#1-制作一份待办事宜-Todo-列表"><span class="section table-of-contents-text">1. 制作一份待办事宜 Todo 列表</span></a></li><li class="section table-of-contents-item section table-of-contents-level-3"><a class="section table-of-contents-link" href="#2-书写一个质能守恒公式-LaTeX"><span class="section table-of-contents-text">2. 书写一个质能守恒公式[^LaTeX]</span></a></li><li class="section table-of-contents-item section table-of-contents-level-3"><a class="section table-of-contents-link" href="#3-高亮一段代码-code"><span class="section table-of-contents-text">3. 高亮一段代码[^code]</span></a></li><li class="section table-of-contents-item section table-of-contents-level-3"><a class="section table-of-contents-link" href="#4-高效绘制-流程图"><span class="section table-of-contents-text">4. 高效绘制 流程图</span></a></li><li class="section table-of-contents-item section table-of-contents-level-3"><a class="section table-of-contents-link" href="#5-高效绘制-序列图"><span class="section table-of-contents-text">5. 高效绘制 序列图</span></a></li><li class="section table-of-contents-item section table-of-contents-level-3"><a class="section table-of-contents-link" href="#6-高效绘制-甘特图"><span class="section table-of-contents-text">6. 高效绘制 甘特图</span></a></li><li class="section table-of-contents-item section table-of-contents-level-3"><a class="section table-of-contents-link" href="#7-绘制表格"><span class="section table-of-contents-text">7. 绘制表格</span></a></li><li class="section table-of-contents-item section table-of-contents-level-3"><a class="section table-of-contents-link" href="#8-更详细语法说明"><span class="section table-of-contents-text">8. 更详细语法说明</span></a></li></ol></li><li class="section table-of-contents-item section table-of-contents-level-2"><a class="section table-of-contents-link" href="#什么是-Cmd-Markdown"><span class="section table-of-contents-text">什么是 Cmd Markdown</span></a><ol class="section table-of-contents-child"><li class="section table-of-contents-item section table-of-contents-level-3"><a class="section table-of-contents-link" href="#1-实时同步预览"><span class="section table-of-contents-text">1. 实时同步预览</span></a></li><li class="section table-of-contents-item section table-of-contents-level-3"><a class="section table-of-contents-link" href="#2-编辑工具栏"><span class="section table-of-contents-text">2. 编辑工具栏</span></a></li><li class="section table-of-contents-item section table-of-contents-level-3"><a class="section table-of-contents-link" href="#3-编辑模式"><span class="section table-of-contents-text">3. 编辑模式</span></a></li><li class="section table-of-contents-item section table-of-contents-level-3"><a class="section table-of-contents-link" href="#4-实时的云端文稿"><span class="section table-of-contents-text">4. 实时的云端文稿</span></a></li><li class="section table-of-contents-item section table-of-contents-level-3"><a class="section table-of-contents-link" href="#5-离线模式"><span class="section table-of-contents-text">5. 离线模式</span></a></li><li class="section table-of-contents-item section table-of-contents-level-3"><a class="section table-of-contents-link" href="#6-管理工具栏"><span class="section table-of-contents-text">6. 管理工具栏</span></a></li><li class="section table-of-contents-item section table-of-contents-level-3"><a class="section table-of-contents-link" href="#7-阅读工具栏"><span class="section table-of-contents-text">7. 阅读工具栏</span></a></li><li class="section table-of-contents-item section table-of-contents-level-3"><a class="section table-of-contents-link" href="#8-阅读模式"><span class="section table-of-contents-text">8. 阅读模式</span></a></li><li class="section table-of-contents-item section table-of-contents-level-3"><a class="section table-of-contents-link" href="#9-标签、分类和搜索"><span class="section table-of-contents-text">9. 标签、分类和搜索</span></a></li><li class="section table-of-contents-item section table-of-contents-level-3"><a class="section table-of-contents-link" href="#10-文稿发布和分享"><span class="section table-of-contents-text">10. 文稿发布和分享</span></a></li></ol></li></ol></li></ol>
-</div>
-
-
-            <div class="entry indigo-link-context">
-                <h1 id="欢迎使用-Cmd-Markdown-编辑阅读器"><a href="#欢迎使用-Cmd-Markdown-编辑阅读器" class="headerlink" title="欢迎使用 Cmd Markdown 编辑阅读器"></a>欢迎使用 Cmd Markdown 编辑阅读器</h1><hr>
+    <div class="post-content">
+      
+        <h1 id="欢迎使用-Cmd-Markdown-编辑阅读器"><a href="#欢迎使用-Cmd-Markdown-编辑阅读器" class="headerlink" title="欢迎使用 Cmd Markdown 编辑阅读器"></a>欢迎使用 Cmd Markdown 编辑阅读器</h1><hr>
 <p>我们理解您需要更便捷更高效的工具记录思想，整理笔记、知识，并将其中承载的价值传播给他人，<strong>Cmd Markdown</strong> 是我们给出的答案 —— 我们为记录思想和分享知识提供更专业的工具。 您可以使用 Cmd Markdown：</p>
 <blockquote>
 <p>整理知识，学习笔记</p>
@@ -314,329 +260,184 @@
 <p>[^LaTeX]: 支持 <strong>LaTeX</strong> 编辑显示支持，例如：$\sum_{i=1}^n a_i=0$， 访问 <a href="http://meta.math.stackexchange.com/questions/5020/mathjax-basic-tutorial-and-quick-reference" target="_blank" rel="external">MathJax</a> 参考更多使用方法。</p>
 <p>[^code]: 代码高亮功能支持包括 Java, Python, JavaScript 在内的，<strong>四十一</strong>种主流编程语言。</p>
 
-                
-<p class="indigo-link-context">
-    <a href="/2017/04/18/hello-world/" rel="next" title="Hello World">
-    上一篇：Hello World
-  </a>
-</p>
-
-
-
-
-            </div>
-			
-        </div>
+      
     </div>
-</article>
 
+    
+      
+      
 
+  <div class="post-copyright">
+    <p class="copyright-item">
+      <span>作者: </span>
+      <span>John Doe</span>
+    </p>
+    <p class="copyright-item">
+      <span>来源: </span>
+      <a href="http://yoursite.com">http://yoursite.com</a>
+    </p>
+    <p class="copyright-item">
+      <span>链接: </span>
+      <a href="http://yoursite.com/2017/04/19/MarkDown语法/">http://yoursite.com/2017/04/19/MarkDown语法/</a>
+    </p>
 
-
-
-
-</div>
-
-        <div class="fixed-action-btn float-sitemap">
-    <a class="btn-floating btn-large green">
-      <i class="fa fa-caret-square-o-up"></i>
-    </a>
-    <ul>
-      <li><a class="btn-return-top btn-floating waves-effect blue" title="回到顶部"><i class="fa fa-arrow-circle-o-up"></i></a></li>
-      <li><a class="btn-floating waves-effect button-collapse orange"  data-activates="main-menu" title="menu"><i class="fa fa-navicon"></i></a></li>
-    </ul>
+    <p class="copyright-item lincese">
+      
+      本文采用<a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/" target="_blank">知识共享署名-非商业性使用 4.0 国际许可协议</a>进行许可
+    </p>
   </div>
 
-    </main>
-    <footer class="page-footer indigo darken-1">
-    
-    <div class="container">
-        <div class="row">
-            
-            <div class="social-group col m4 s12">
-                <h5 class="white-text">社交</h5>
-                
-                    <a class="social-link" href="http://weibo.com/1956184117" target="_blank">
-                        <i class="fa fa-2x fa-weibo"></i>
-                    </a>
-                
-                    <a class="social-link" href="https://github.com/raytaylorlin" target="_blank">
-                        <i class="fa fa-2x fa-github"></i>
-                    </a>
-                
-                    <a class="social-link" href="/atom.xml" target="_blank">
-                        <i class="fa fa-2x fa-rss"></i>
-                    </a>
-                
-                <div class="site-visitors-container white-text">
-                    <span>
-                        <i class="fa fa-user"></i>
-                        <span class="busuanzi-value" id="busuanzi_value_site_uv"></span>
-                    </span>
-                    <span>&nbsp;|&nbsp;</span>
-                    <span>
-                        <i class="fa fa-eye"></i>
-                        <span class="busuanzi-value" id="busuanzi_value_site_pv"></span>
-                    </span>
-                </div>
-            </div>
-            
 
-            
-            <div class="col m8 s12">
-                <h5 class="white-text">友情链接</h5>
-                
-                    <a class="social-link" href="http://raytaylorlin.com/" target="_blank">raytaylorism主题作者的技术博客</a>
-                
-                    <a class="social-link" href="https://github.com/raytaylorlin" target="_blank">Github地址（测试友情链接）</a>
-                
-            </div>
-            
-        </div>
+
+      
+      
+  <div class="post-reward">
+    <input type="checkbox" name="reward" id="reward" hidden />
+    <label class="reward-button" for="reward">赞赏支持</label>
+    <div class="qr-code">
+      
+      
+        <label class="qr-code-image" for="reward">
+          <img class="image" src="/image/reward/wechat.png" title="wechat">
+        </label>
+      
+      
+        <label class="qr-code-image" for="reward">
+          <img class="image" src="/image/reward/alipay.png" title="alipay">
+        </label>
+      
     </div>
+  </div>
+
     
 
-    <div class="footer-copyright indigo-link-context">
-        <div class="container">
-            © 2016 example.com, All rights reserved.
-            <p class="right" style="margin-top: 0;">本博客由 <a href="https://hexo.io">Hexo</a> 强力驱动 | 主题 <a href="https://github.com/raytaylorlin/hexo-theme-raytaylorism">raytaylorism</a></p>
-        </div>
-    </div>
-</footer>
+    
+      <footer class="post-footer">
+        
+        
+        
+  <nav class="post-nav">
+    
+      <a class="prev" href="/2017/04/18/hello-world/">
+        <i class="iconfont icon-left"></i>
+        <span class="prev-text nav-default">Hello World</span>
+        <span class="prev-text nav-mobile">Prev</span>
+      </a>
+    
+    
+  </nav>
+
+      </footer>
+    
+
+  </article>
 
 
-    <noscript>
-    <div class="noscript">
-        <p class="center-align">当前网速较慢或者你使用的浏览器不支持博客特定功能，请尝试刷新或换用Chrome、Firefox等现代浏览器</p>
-    </div>
-</noscript>
-<div class="noscript">
-    <p class="center-align">当前网速较慢或者你使用的浏览器不支持博客特定功能，请尝试刷新或换用Chrome、Firefox等现代浏览器</p>
+          </div>
+          
+  <div class="comments" id="comments">
+    
+  </div>
+
+
+        </div>  
+      </main>
+
+      <footer id="footer" class="footer">
+
+  <div class="social-links">
+    
+      
+        
+          <a href="mailto:your@email.com" class="iconfont icon-email" title="email"></a>
+        
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+    
+    
+      
+      <a href="/atom.xml" class="iconfont icon-rss" title="rss"></a>
+    
+  </div>
+
+
+<div class="copyright">
+  <span class="power-by">
+    Powered by <a class="hexo-link" href="https://hexo.io/">Hexo</a>
+  </span>
+  
+  <span class="theme-info">
+    Theme - 
+    <a class="theme-link" href="https://github.com/ahonn/hexo-theme-even">Even</a>
+  </span>
+
+  <span class="copyright-year">
+    
+    &copy; 
+     
+      2015 - 
+    
+    2017
+
+    <span class="heart">
+      <i class="iconfont icon-heart"></i>
+    </span>
+    <span class="author">John Doe</span>
+  </span>
 </div>
+      </footer>
 
+      <div class="back-to-top" id="back-to-top">
+        <i class="iconfont icon-up"></i>
+      </div>
+    </div>
 
-<script src="/js/jquery.min.js"></script>
-<script src="/js/materialize.min.js"></script>
-<script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js">
-</script>
+    
+  
 
-<script>
-    (function($) {
-        $(document).ready(function() {
-            // 隐藏禁用javascript（针对微信内置浏览器）的提示
-            $('.noscript').hide();
-
-            // 图片缩放效果
-            var $imgs = $('img').not('.slider-image').not('.avatar-image').not('.carousel-image').not('.card-cover-image').not('.qrcode');
-
-            // 给图片加上点击放大效果（materialbox插件）
-            $imgs.addClass('materialboxed').each(function(i, el) {
-                $(this).attr('data-caption', $(this).attr('alt') || ' ');
-            }).materialbox();
-
-            // 优化表格的显示
-            $('table').each(function() {
-                var $table = $(this);
-                // 除去多行代码的情况
-                if ($table.find('pre').length == 0) {
-                    $table.addClass('responsive-table striped bordered');
-                }
-            });
-
-            // 首页幻灯片
-            $('.slider').slider({indicators: true, full_width: true, interval: 8000});
-
-            $(".button-collapse").sideNav();
-            $(".category-menu").sideNav();
-
-            // 针对gallery post
-            $('.carousel').carousel({full_width: true});
-            $('.carousel-control.prev').click(function() {
-                $('.carousel').carousel('prev');
-            });
-            $('.carousel-control.next').click(function() {
-                $('.carousel').carousel('next');
-            });
-
-            // 文章目录
-            $('article').not('.simple-article').find('h1').add('h2').add('h3').add('h4').add('h5').add('h6').scrollSpy();
-
-            // 目录随屏幕滚动（防止目录过长越过footer）
-            var $toc = $('.toc');
-            var scrollTargetTop = 0;
-            $(window).scroll(function() {
-                var $activeLink = $toc.find('a.active.section');
-                if ($(window).scrollTop() < 100) {
-                    scrollTargetTop = 0;
-                } else {
-                    if ($activeLink[0]) {
-                        scrollTargetTop = $activeLink.offset().top - $toc.offset().top;
-                    }
-                }
-                $toc.css('top', '-' + scrollTargetTop + 'px');
-            });
-
-            // 修正文章目录的left-border颜色
-            var color = $('.table-of-contents-text').css('color');
-            $('.table-of-contents-link').css('border-left-color', color);
-
-            // 针对移动端做的优化：FAB按钮点击一下收回
-            if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
-                $('.fixed-action-btn').addClass('click-to-toggle');
-            }
-            // 回到顶部
-            $('.btn-return-top').click(function() {
-                $('body, html').animate({
-                    scrollTop: 0
-                }, 500);
-            });
-
-            // 重置读书页面的Tab标签页的颜色
-            $('li.tab a').hover(function() {
-                $(this).toggleClass('text-lighten-4');
-            });
-            $('.indicator').addClass('green lighten-2');
-
-            
-            // 添加new标签
-            $('.menu-reading, .menu-about').append('<span class="new badge pink"></span>');
-            
-
-            // 搜索功能
-            $('.modal-trigger').leanModal({
-                // 打开搜索框时自动聚焦
-                ready: function() {
-                    if ($('#search').is(":visible")) {
-                        $('#search-input').focus();
-                    }
-                }
-            });
-            var searchXml = "";
-            if (searchXml.length == 0) {
-             	searchXml = "search.xml";
-            }
-            var searchPath = "/" + searchXml;
-            initSearch(searchPath, 'search-input', 'search-result');
-        });
-
-        // 初始化搜索与匹配函数
-        var initSearch = function(path, search_id, content_id) {
-            'use strict';
-            $.ajax({
-                url: path,
-                dataType: "xml",
-                success: function(xmlResponse) {
-                    // get the contents from search data
-                    var datas = $("entry", xmlResponse).map(function() {
-                        return {
-                            title: $("title", this).text(),
-                            content: $("content", this).text(),
-                            url: $("url", this).text()
-                        };
-                    }).get();
-                    var $input = document.getElementById(search_id);
-                    var $resultContent = document.getElementById(content_id);
-                    $input.addEventListener('input', function() {
-                        var str = '<ul class=\"search-result-list\">';
-                        var keywords = this.value.trim().toLowerCase().split(/[\s\-]+/);
-                        $resultContent.innerHTML = "";
-                        if (this.value.trim().length <= 0) {
-                            return;
-                        }
-                        // perform local searching
-                        datas.forEach(function(data) {
-                            var isMatch = true;
-                            var content_index = [];
-                            var data_title = data.title.trim().toLowerCase();
-                            var data_content = data.content.trim().replace(/<[^>]+>/g, "").toLowerCase();
-                            var data_url = data.url;
-                            var index_title = -1;
-                            var index_content = -1;
-                            var first_occur = -1;
-                            // only match artiles with not empty titles and contents
-                            if (data_title != '' && data_content != '') {
-                                keywords.forEach(function(keyword, i) {
-                                    index_title = data_title.indexOf(keyword);
-                                    index_content = data_content.indexOf(keyword);
-                                    if (index_title < 0 && index_content < 0) {
-                                        isMatch = false;
-                                    } else {
-                                        if (index_content < 0) {
-                                            index_content = 0;
-                                        }
-                                        if (i == 0) {
-                                            first_occur = index_content;
-                                        }
-                                    }
-                                });
-                            }
-                            // show search results
-                            if (isMatch) {
-                                keywords.forEach(function(keyword) {
-                                    var regS = new RegExp(keyword, "gi");
-                                    data_title = data_title.replace(regS, "<span class=\"search-keyword indigo lighten-2\">" + keyword + "</span>");
-                                });
-
-                                str += "<li><a href='" + data_url + "' class='search-result-title'>" + data_title + "</a>";
-                                var content = data.content.trim().replace(/<[^>]+>/g, "");
-                                if (first_occur >= 0) {
-                                    // cut out 100 characters
-                                    var start = first_occur - 20;
-                                    var end = first_occur + 80;
-                                    if (start < 0) {
-                                        start = 0;
-                                    }
-                                    if (start == 0) {
-                                        end = 100;
-                                    }
-                                    if (end > content.length) {
-                                        end = content.length;
-                                    }
-                                    var match_content = content.substring(start, end);
-                                    // highlight all keywords
-                                    keywords.forEach(function(keyword) {
-                                        var regS = new RegExp(keyword, "gi");
-                                        match_content = match_content.replace(regS, "<span class=\"search-keyword indigo lighten-2\">" + keyword + "</span>");
-                                    });
-
-                                    str += "<p class=\"search-result\">..." + match_content + "...</p>"
-                                }
-                                str += "</li>";
-                            }
-                        });
-                        str += "</ul>";
-                        $resultContent.innerHTML = str;
-                    });
-                }
-            });
-        }
-    })(jQuery);
-</script>
-
-
-<script src="/js/prettify.js"></script>
-<script type="text/javascript">
-    $(document).ready(function() {
-        $("pre").addClass("prettyprint");
-        prettyPrint();
-    });
-</script>
+  
+  
 
 
 
 
-
-
-<script type="text/x-mathjax-config">
-MathJax.Hub.Config({
-  tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}
-});
-</script>
-<script type="text/javascript" async
-  src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML">
-</script>
+    
 
 
 
-</body>
+
+  
+    <script type="text/javascript" src="/lib/jquery/jquery-3.1.1.min.js"></script>
+  
+
+  
+    <script type="text/javascript" src="/lib/slideout/slideout.js"></script>
+  
+
+  
+
+
+    <script type="text/javascript" src="/js/src/even.js?v=2.4.x"></script>
+<script type="text/javascript" src="/js/src/bootstrap.js?v=2.4.x"></script>
+
+    
+  </body>
 </html>
